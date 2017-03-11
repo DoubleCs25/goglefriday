@@ -1,3 +1,4 @@
+To start the game hit "ctrl, shift, alt, s"
 The game starts off with a block that the player can move up, down left and right
 At the same time another block appears on screen that is a different color but can not be moved
 Your goal is to get as many of the fixed blocks as you can
