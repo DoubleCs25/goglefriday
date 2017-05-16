@@ -1,0 +1,73 @@
+class Player:
+    x = 10
+    y = 10
+    speed = 1
+ 
+    def moveRight(self):
+        self.x = self.x + self.speed
+ 
+    def moveLeft(self):
+        self.x = self.x - self.speed
+ 
+    def moveUp(self):
+        self.y = self.y - self.speed
+ 
+    def moveDown(self):
+        self.y = self.y + self.speed
+
+ pygame.event.pump()
+ keys = pygame.key.get_pressed() 
+ 
+ if (keys[K_RIGHT]):
+    print "Right arrow pressed."
+
+class Player:
+    x = 0
+    y = 0
+    speed = 32
+    direction = 0
+ 
+    def update(self):
+        if self.direction == 0:
+            self.x = self.x + self.speed
+        if self.direction == 1:
+            self.x = self.x - self.speed
+        if self.direction == 2:
+            self.y = self.y - self.speed
+        if self.direction == 3:
+            self.y = self.y + self.speed
+ 
+    def moveRight(self):
+        self.direction = 0
+ 
+    def moveLeft(self):
+        self.direction = 1
+ 
+    def moveUp(self):
+        self.direction = 2
+ 
+    def moveDown(self):
+        self.direction = 3
+
+class Apple:
+    x = 0
+    y = 0
+    step = 44
+ 
+    def __init__(self,x,y):
+        self.x = x * self.step
+        self.y = y * self.step
+ 
+    def draw(self, surface, image):
+        surface.blit(image,(self.x, self.y))
+
+def isCollision(self,x1,y1,x2,y2,bsize):
+        if x1 >= x2 and x1 <= x2 + bsize:
+            if y1 >= y2 and y1 <= y2 + bsize:
+                return True
+        return False
+
+import time
+...
+time.sleep (100.0 / 1000.0);
+
